@@ -410,6 +410,27 @@ http_file(
 )
 
 http_file(
+    name = "openjdk_macos_aarch64",
+    downloaded_file_path = "zulu-macos.tar.gz",
+    sha256 = "89032b50b90a3220b0f5e9c2cba2b5dc8a03c71fe9258d1bf1e219433a8a0bf9",
+    urls = ["https://cdn.azul.com/zulu/bin/zulu11.43.1015-ca-jdk11.0.9.1-macos_aarch64.tar.gz"],
+)
+
+http_file(
+    name = "openjdk_macos_aarch64_vanilla",
+    downloaded_file_path = "zulu-macos-vanilla.tar.gz",
+    sha256 = "d602534d8d86abb69311fc081102d2fa800e35a8330ad58e3379da0474152447",
+    urls = ["https://github.com/thii/artifacts/releases/download/zulu11.43.1015-ca-jdk11.0.9.1-macos_aarch64-vanilla/zulu11.43.1015-ca-jdk11.0.9.1-macos_aarch64-vanilla.tar.gz"],
+)
+
+http_file(
+    name = "openjdk_macos_aarch64_minimal",
+    downloaded_file_path = "zulu-macos-minimal.tar.gz",
+    sha256 = "fcfcf888a263a9a7a2aa3412bbbe5d45676b339e6c7d70dc79e76f43461b17b0",
+    urls = ["https://github.com/thii/artifacts/releases/download/zulu11.43.1015-ca-jdk11.0.9.1-macos_aarch64-minimal/zulu11.43.1015-ca-jdk11.0.9.1-macos_aarch64-minimal.tar.gz"],
+)
+
+http_file(
     name = "openjdk_win",
     downloaded_file_path = "zulu-win.zip",
     sha256 = "8e1604b3a27dcf639bc6d1a73103f1211848139e4cceb081d0a74a99e1e6f995",
